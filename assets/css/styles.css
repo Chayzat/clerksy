@@ -75,6 +75,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: var(--text-color-light);
 }
 
 img {
@@ -92,4 +93,44 @@ img {
 .section {
     padding: 4.5rem 0rem 2rem;
 }
-
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.button {
+    display: inline-block;
+    border-radius: 2rem;
+    background-color: var(--first-color-light);
+    padding: 15px 25px;
+}
+.button:hover {
+    background-color: var(--first-color-alt);
+    color: var(--text-color);
+    font-weight: var(--font-semibold);
+    transition: all .3s ease;
+}
+/* ===============-HEADER-=========================== */
+.header {
+    background-color: var(--body-color-alt);
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .7rem 1rem;
+}
+.nav__buttons-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+/* ===============-MEDIA QUERIES-=========================== */
+@media (max-width: 676px) {
+    .hide {
+        display: none;
+    }
+    .nav__logo img {
+        width: 6rem;
+    }
+}

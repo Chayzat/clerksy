@@ -1,0 +1,95 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:regular&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Color ==========*/
+  --first-color: #163A24;
+  --first-color-light: #198C36;
+  --first-color-alt: #FAB5A0;
+  --first-color-gray: #FBFAF7;
+  --body-color: #fff;
+  --body-color-alt: #163A24;
+  --body-color-light: #F2EFE6;
+  --text-color: #163A24;
+  --text-color-alt: #198C36;
+  --text-color-light: #FBFAF7;
+
+  /*========== Font and typography ==========*/
+  --body-font: 'Noto Sans', sans-serif;
+  --second-font: 'Rowdies', sans-serif;
+  --h2-font-size: 3rem;
+  --h3-font-size: 1.75rem;
+  --normal-font-size: 1.125rem;
+  --small-font-size: 1rem;
+  --smaller-font-size: .875rem;
+
+  /*========== Font weight ==========*/
+  --font-semibold: 600;
+  --font-medium: 400;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 1024px) {
+  :root {
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+button,
+input {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3 {
+    color: var(--text-color);
+    font-weight: var(--font-semibold);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===============-REUSABLE CSSS CLASSES-=========================== */
+.container {
+    max-width: 1124px;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.section {
+    padding: 4.5rem 0rem 2rem;
+}
+

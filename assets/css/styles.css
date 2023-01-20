@@ -200,6 +200,13 @@ img {
     color: var(--text-color-light);
     margin-top: 1rem;
 }
+/* ===============-EMPLOYEE-=========================== */
+.employee__content {
+    text-align: center;
+}
+.employee__description {
+    padding: 2rem;
+}
 /* ===============-MEDIA QUERIES-=========================== */
 @media (max-width: 820px) {
     :root {
